@@ -19,7 +19,7 @@
     box-sizing: border-box;
 }
 
-/* ---- Typography ---- */
+
 
 html {
     font-size: 62.5%;
@@ -33,7 +33,7 @@ body {
     margin: 0;
 }
 
-/* ------ Common Styles ------ */
+
 
 .container {
     display: inline;
@@ -58,7 +58,7 @@ body {
     row-gap: 25px;
 }
 
-/* ---- Main ---- */
+
 
 main {
     align-content: center;
@@ -82,9 +82,9 @@ main {
     width: 1px;
 }
 
-/* ---- Profile Widget ---- */
 
-.profile {
+
+.perfil {
     background-color: var(--dark-blue);
     border-radius: 15px;
 }
@@ -95,38 +95,45 @@ main {
     display: inline-block;
     height: 65px;
     justify-self: right;
-    margin-right: 15px;
+    margin-right: 3em;
     width: 65px;
 }
 
-.profile__content {
-    align-items: center;
+.perfil__cont {
+    text-align: center;
     background-color: var(--profile);
     border-radius: 15px;
     display: flex;
-    height: 130px;
-    justify-content: flex-start;
-    padding-left: 25px;
+    height: 120px;
+    padding-left: 23px;
 }
 
-.profile__title,
-.profile__name {
-    margin: 1px 2px 7px;
+.perfil_titulo,
+.perfil__nombre {
+    margin-left: -6em;
+    margin-bottom: -50px;
 }
 
-.profile__title {
+.perfil__titulo {
     color: var(--pale-blue);
     display: block;
-    font-size: 1.3rem;
+    font-size: 1em;
     font-weight: 300;
+    margin: 1em;
+    margin-left: -10em;
+    margin: -1em;
 }
 
-.profile__name {
-    font-size: 2.3rem;
-    font-weight: 200;
+.perfil__nombre {
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: -0.4em;
+    margin-bottom: -5em;
+    word-spacing:1em;
+    display: block;
 }
 
-.profile__period {
+.perfil__periodo {
     align-content: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -135,7 +142,7 @@ main {
     position: relative;
 }
 
-.period {
+.periodo {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2;
@@ -143,11 +150,11 @@ main {
     transition: color 0.3s;
 }
 
-.period:not(.active) {
+.periodo:not(.active) {
     color: var(--desaturated-blue);
 }
 
-.period:hover {
+.periodo:hover {
     color: white;
     cursor: pointer;
 }
@@ -277,7 +284,7 @@ main {
         grid-template: repeat(3, 160px) / 1fr 1fr;
     }
 
-    .profile__content {
+    .perfil__cont {
         padding-left: 50px;
     }
 }
@@ -292,7 +299,7 @@ main {
         width: 1110px;
     }
 
-    .profile__content {
+    .perfil__cont {
         align-items: flex-start;
         border-radius: 15px;
         flex-flow: column wrap;
@@ -308,11 +315,11 @@ main {
         width: 80px;
     }
 
-    .profile__name {
+    .perfil__nombre {
         font-size: 4rem;
     }
 
-    .profile__period {
+    .perfil__periodo {
         align-content: start;
         grid-auto-flow: column;
         grid-template: repeat(3, 1fr) / 1fr;
@@ -349,3 +356,13 @@ main {
         margin: 0;
     }
 }
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #000;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

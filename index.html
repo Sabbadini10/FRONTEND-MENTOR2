@@ -4,59 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+
   <meta name="description" content="Solution for Frontend Mentor 'Time-Tracking Dashboard' challenge">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-      color: #000;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
   <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
   <main>
     <h1 class="hidden">Time Tracking Dashboard</h1>
     <div class="container grid">
-      <!-- Begin Profile Widget -->
-      <section class="profile">
+      <section class="perfil">
         <h2 class="hidden">Profile</h2>
-        <header tabindex="0" class="profile__content">
+        <header tabindex="0" class="perfil__cont">
           <img id="avatar" src="images/image-jeremy.png" alt="avatar">
           <p>
-            <span class="profile__title">Report for</span>
-            <span class="profile__name">Jeremy Robson</span>
+            <span class="perfil__titulo">Report for</span><br>
+            <span class="perfil__nombre">Jeremy <br>Robson</span>
           </p>
         </header>
-        <section tabindex="0" class="profile__period">
+        <section tabindex="0" class="perfil__periodo">
           <h3 class="hidden">Timeframes</h3>
-          <span tabindex="0" class="active period" data-period="daily">
+          <span tabindex="0" class="active periodo" data-period="daily">
             Daily
           </span>
-          <span tabindex="0" class="period" data-period="weekly">
+          <span tabindex="0" class="periodo" data-period="weekly">
             Weekly
           </span>
-          <span tabindex="0" class="period" data-period="monthly">
+          <span tabindex="0" class="periodo" data-period="monthly">
             Monthly
           </span>
         </section>
       </section>
-      <!-- End of Profile Widget -->
 
       <div class="result-widgets">
-        <!-- Begin of Work Widget -->
         <div class="widget work">
           <section class="widget__content">
             <h2 tabindex="0" class="widget__title">Work</h2>
@@ -68,8 +54,7 @@
             </p>
           </section>
         </div>
-        <!-- End of Work WIdget -->
-        <!-- Begin of Play Widget -->
+
         <div class="widget play">
           <section class="widget__content">
             <h2 tabindex="0" class="widget__title">Play</h2>
@@ -81,8 +66,7 @@
             </p>
           </section>
         </div>
-        <!-- End of Play WIdget -->
-        <!-- Begin of Study Widget -->
+
         <div class="widget study">
           <section class="widget__content">
             <h2 tabindex="0" class="widget__title">Study</h2>
@@ -94,8 +78,7 @@
             </p>
           </section>
         </div>
-        <!-- End of Study WIdget -->
-        <!-- Begin of Exercise Widget -->
+
         <div class="widget exercise">
           <section class="widget__content">
             <h2 tabindex="0" class="widget__title">Exercise</h2>
@@ -107,8 +90,7 @@
             </p>
           </section>
         </div>
-        <!-- End of Exercise WIdget -->
-        <!-- Begin of Social Widget -->
+
         <div class="widget social">
           <section class="widget__content">
             <h2 tabindex="0" class="widget__title">Social</h2>
@@ -120,8 +102,7 @@
             </p>
           </section>
         </div>
-        <!-- End of Social WIdget -->
-        <!-- Begin of Self-care Widget -->
+
         <div class="widget self-care">
           <section class="widget__content">
             <h2 tabindex="0" class="widget__title">Self care</h2>
@@ -133,11 +114,8 @@
             </p>
           </section>
         </div>
-        <!-- End of Self-care WIdget -->
       </div>
-      <!-- End of result-widgets -->
     </div>
-    <!-- End of container -->
   </main>
 
   <footer>
